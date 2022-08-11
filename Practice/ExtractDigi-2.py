@@ -1,12 +1,11 @@
 number = input()
 
-for x in range(0, (len(number)), 1):
+for x in range((len(number))):
     if (x == 0):
-        place = ("1st")
+        print("The 1st digit is: {}". format(number[x]))
     elif x == 1:
-        place = ("2nd")
+        print("The 2nd digit is: {}". format(number[x]))
     elif x == 2:
-        place = ("3rd")
+        print("The 3rd digit is: {}". format(number[x]))
     else:
-        place = (x+1,"th")
-    print("The", place, "digit is: ", number[x])
+        print("The {}th digit is: {}". format(x, number[x]))
