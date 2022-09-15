@@ -35,15 +35,18 @@ print(car_dict)
 # #del car_dict
 
 #ITERATE
+#method 1 ; get key
 for key in car_dict:
     print(key)
     print(car_dict[key]) #or
     print("Key: {}, Value: {}".format(key, car_dict[key]))
 
+#method 1 ; get key and value
 for key, value in car_dict.items():
     print(key, value) #or
     print(f"Key: {key}, Value: {value}")
 
+#method 1 ; get value
 for value in car_dict.values():
     print(value) #dont know what key is
 
